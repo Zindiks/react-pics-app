@@ -1,0 +1,58 @@
+/* 
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-start;
+        align-content: space-between;
+        justify-content: center;
+        column-gap: 10px;
+ */
+
+
+
+
+ /* CSS Responsive Masonry Grid Layouts */
+
+.image-list {
+
+    width: auto;
+    height: auto;
+    margin: 0px auto;
+    column-count: 4;
+    break-inside: avoid;
+
+}
+
+
+.image-list .card{
+    break-inside: avoid;
+    overflow-wrap: break-word;
+
+}
+
+@media (max-width: 1200px) {
+    .image-list {
+        columns: 3;
+        width: calc(100%-40px);
+        box-sizing: border-box;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .image-list {
+        columns: 2;
+    }
+}
+
+
+@media (max-width: 500px){
+    .image-list {
+        columns: 1;
+    }
+
+    .image-list .card {
+        width: 100%;
+    }
+
+}
